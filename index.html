@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chispa Studio · Regalos grabados con láser</title>
+<meta name="description" content="Regalos personalizados en madera grabados con láser. Pide por WhatsApp con un código.">
+<meta name="theme-color" content="#F28C28">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF4E6; --card:#FFFFFF; --text:#2A1608; --muted:#7A5C45; --line:#F0DCC4;
+  --accent:#F28C28; --accent-ink:#2A1608; --sage:#7FA38A; --wa:#1FA855; --wa-ink:#FFFFFF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1C1512; --card:#2A201B; --text:#FFF4E6; --muted:#CDB59E; --line:#3D2E25;
+    --accent:#F5A04A; --accent-ink:#2A1608; --sage:#9BC2A6; --wa:#2BC06A; --wa-ink:#0E2A19;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1C1512; --card:#2A201B; --text:#FFF4E6; --muted:#CDB59E; --line:#3D2E25;
+  --accent:#F5A04A; --accent-ink:#2A1608; --sage:#9BC2A6; --wa:#2BC06A; --wa-ink:#0E2A19;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh}
+main{max-width:480px;margin:0 auto;padding:28px 18px 40px}
+.hero{text-align:center}
+.logo{width:84px;height:84px;display:block;margin:0 auto 12px;border-radius:24px;box-shadow:0 8px 24px rgba(242,140,40,.35)}
+h1{font-size:1.6rem;line-height:1.2;margin:0}
+.tag{margin:6px 0 14px;color:var(--muted);font-size:.98rem}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.8rem}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--wa);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;padding:14px 18px;margin-top:12px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--text);font:600 1rem/1.2 inherit;font-family:inherit;text-decoration:none;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--wa);color:var(--wa-ink);border-color:transparent;font-size:1.05rem}
+.btn.accent{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+h2{font-size:1rem;margin:30px 0 4px}
+.sub{margin:0 0 12px;color:var(--muted);font-size:.86rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{flex:1 1 calc(50% - 8px);min-height:46px;padding:10px 12px;border-radius:14px;border:1.5px dashed var(--accent);background:transparent;color:var(--text);font:600 .9rem inherit;font-family:inherit;cursor:pointer;text-align:center}
+.chip small{display:block;font-weight:400;color:var(--muted);font-size:.72rem}
+.chip:active{background:var(--accent);color:var(--accent-ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
+label{display:block;font-size:.8rem;color:var(--muted);margin:10px 0 4px}
+input,select{width:100%;min-height:46px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:400 1rem inherit;font-family:inherit}
+input:focus,select:focus,.btn:focus-visible,.chip:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.perks{display:grid;gap:10px;margin-top:6px}
+.perk{display:flex;gap:12px;align-items:flex-start;font-size:.9rem}
+.perk b{display:block}
+.perk span.i{flex:none;width:34px;height:34px;border-radius:10px;background:var(--sage);color:var(--accent-ink);display:grid;place-items:center;font-size:1.05rem}
+footer{margin-top:34px;text-align:center;color:var(--muted);font-size:.82rem}
+footer strong{color:var(--text);display:block;font-size:.95rem;margin-bottom:4px}
+.theme{margin-top:14px;background:none;border:none;color:var(--muted);font:inherit;font-size:.78rem;text-decoration:underline;cursor:pointer}
+@media (prefers-reduced-motion: reduce){.dot{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Logo de Chispa Studio: una C con una chispa">
+      <rect width="64" height="64" rx="18" fill="#F28C28"/>
+      <path d="M44 20A18.5 18.5 0 1 0 44 44" fill="none" stroke="#FFF4E6" stroke-width="7" stroke-linecap="round"/>
+      <path d="M47 26L48.8 30.2L53 32L48.8 33.8L47 38L45.2 33.8L41 32L45.2 30.2Z" fill="#2A1608"/>
+    </svg>
+    <h1>Chispa Studio</h1>
+    <p class="tag">Tu historia, grabada con chispa ✨</p>
+    <span class="badge"><span class="dot"></span>Pedidos abiertos · respondo en menos de 1 h</span>
+  </header>
+
+  <a class="btn primary" data-wa="Hola Chispa Studio ✨ Vi tu link y quiero hacer un pedido." href="#">Pedir por WhatsApp</a>
+  <a class="btn" id="ig" href="#" target="_blank" rel="noopener">Escribirme por Instagram</a>
+  <a class="btn" id="tt" href="#" target="_blank" rel="noopener">Ver el proceso en TikTok</a>
+
+  <h2>Pide con un código</h2>
+  <p class="sub">Toca tu código y se abre el chat con el mensaje listo. Sin vueltas.</p>
+  <div class="chips">
+    <button class="chip" data-code="NAVIDAD">NAVIDAD<small>esferas, guirnaldas</small></button>
+    <button class="chip" data-code="MASCOTA">MASCOTA<small>placas y llaveros</small></button>
+    <button class="chip" data-code="BODA">BODA<small>eventos y recuerdos</small></button>
+    <button class="chip" data-code="EMPRESA">EMPRESA<small>logo en madera</small></button>
+    <button class="chip" data-code="LLAVERO">LLAVERO<small>con tu nombre</small></button>
+    <button class="chip" data-code="OTRO">OTRO<small>cuéntame tu idea</small></button>
+  </div>
+
+  <h2>Pedido exprés</h2>
+  <p class="sub">Llena tres datos y te llega la cotización con prueba de diseño.</p>
+  <div class="card">
+    <label for="prod">¿Qué quieres?</label>
+    <select id="prod">
+      <option>Llavero con nombre</option>
+      <option>Esfera navideña</option>
+      <option>Guirnalda</option>
+      <option>Letrero con nombre</option>
+      <option>Placa de mascota</option>
+      <option>Recuerdos para evento</option>
+      <option>Otra idea</option>
+    </select>
+    <label for="txt">Nombre o texto a grabar</label>
+    <input id="txt" type="text" maxlength="60" placeholder="Ej. Sofía, Primera Navidad 2026" autocomplete="off">
+    <label for="when">¿Para cuándo lo necesitas?</label>
+    <input id="when" type="text" maxlength="40" placeholder="Ej. 15 de diciembre" autocomplete="off">
+    <button class="btn accent" id="send" type="button">Enviar pedido ✨</button>
+  </div>
+
+  <h2>Por qué Chispa</h2>
+  <div class="perks">
+    <div class="perk"><span class="i">✎</span><div><b>Prueba de diseño gratis</b>Ves tu pieza antes de pagar el resto.</div></div>
+    <div class="perk"><span class="i">⏱</span><div><b>Entrega en 3–5 días hábiles</b>Hecho a la medida, sin esperas eternas.</div></div>
+    <div class="perk"><span class="i">🎁</span><div><b>Llega listo para regalar</b>Empaque incluido en cada pedido.</div></div>
+  </div>
+
+  <footer>
+    <strong>Cada detalle cuenta.</strong>
+    Etiquétanos @chispa.studiov y cuéntanos cómo quedó.
+    <br><button class="theme" id="theme" type="button">Cambiar tema claro/oscuro</button>
+  </footer>
+</main>
+
+<script>
+(function () {
+  // ===== EDITA ESTOS DATOS =====
+  var CONFIG = {
+    phone: "584228745777",        // WhatsApp con código de país, sin + ni espacios
+    instagram: "chispa.studiov",   // usuario de Instagram sin @
+    tiktok: "chispa.studiov"       // usuario de TikTok sin @
+  };
+  // =============================
+  function wa(text) {
+    return "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(text);
+  }
+  document.getElementById("ig").href = "https://ig.me/m/" + CONFIG.instagram;
+  document.getElementById("tt").href = "https://www.tiktok.com/@" + CONFIG.tiktok;
+
+  var main = document.querySelectorAll("[data-wa]");
+  for (var i = 0; i < main.length; i++) {
+    main[i].href = wa(main[i].getAttribute("data-wa"));
+    main[i].target = "_blank";
+    main[i].rel = "noopener";
+  }
+  var chips = document.querySelectorAll(".chip");
+  for (var j = 0; j < chips.length; j++) {
+    chips[j].addEventListener("click", function () {
+      var code = this.getAttribute("data-code");
+      window.open(wa("Hola Chispa Studio ✨ Vi tu link. Mi código es " + code + ". Quiero cotizar."), "_blank", "noopener");
+    });
+  }
+  document.getElementById("send").addEventListener("click", function () {
+    var p = document.getElementById("prod").value;
+    var t = document.getElementById("txt").value.trim();
+    var w = document.getElementById("when").value.trim();
+    var msg = "Hola Chispa Studio ✨ Quiero: " + p +
+      (t ? ". Texto: " + t : "") +
+      (w ? ". Para: " + w : "") + ". ¿Me cotizas?";
+    window.open(wa(msg), "_blank", "noopener");
+  });
+  document.getElementById("theme").addEventListener("click", function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute("data-theme") === "dark" ||
+      (!root.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    root.setAttribute("data-theme", dark ? "light" : "dark");
+  });
+})();
+</script>
+</body>
+</html>
